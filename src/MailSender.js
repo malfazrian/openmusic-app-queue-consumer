@@ -1,4 +1,4 @@
-const nodemailer = require("nodemailer");
+const nodemailer = require('nodemailer');
 
 class MailSender {
   constructor() {
@@ -14,13 +14,13 @@ class MailSender {
 
   sendEmail(targetEmail, content) {
     const message = {
-      from: "OpenMusic Apps",
+      from: 'OpenMusic Apps',
       to: targetEmail,
-      subject: "Ekspor Playlist",
-      text: "Terlampir hasil dari ekspor playlist",
+      subject: 'Ekspor Playlist',
+      text: 'Terlampir hasil dari ekspor playlist',
       attachments: [
         {
-          filename: "playlists.json",
+          filename: 'playlists.json',
           content,
         },
       ],
